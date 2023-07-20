@@ -19,7 +19,7 @@ $(document).ready(function() {
     });
 
     $(window).on('touchmove', function(e) {
-        e.preventDefault();
+        // e.preventDefault();
 
         var touchEndY = e.originalEvent.changedTouches[0].clientY;
       
