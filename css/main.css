@@ -1,11 +1,19 @@
 * {
     box-sizing: border-box;
-    background-color: #FFF5ED
+    background-color: #f8eee3;
+    color: white;
+    font-family: 'Montserrat';
 }
 
 h2{
     background-color: transparent;
 }
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 /* -------------------------------------------- */
 
@@ -16,29 +24,4 @@ h2{
     /* background-color: blue; */
     /* bottom: 0; */
     transition: transform 0.5s ease-out; /* 添加这行 */
-}
-
-.style-first{
-    width: 80%;
-    height: 80%;
-    background-color: #CED2E7;
-    z-index: 100;
-}
-
-.style-second{
-    width: 80%;
-    height: 80%;
-    background-color: #E7D9E6;
-    right: 0;
-    bottom: 0;
-    z-index: 90;
-}
-
-.style-third{
-    width: 80%;
-    height: 80%;
-    background-color: #D37548;
-    top: 0;
-    right: 0;
-    z-index: 80;
 }

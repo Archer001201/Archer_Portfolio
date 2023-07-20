@@ -2,13 +2,33 @@ $(document).ready(function() {
     var pagePilings = $('.page-piling');
     var totalScrollTop = 0;  // 记录滚动的总距离
     var vh = $(window).height() * 1.25;  // 计算视口的高度
+    var touchStartY;  // 记录手指触摸开始时的坐标
 
     $(window).on('wheel', function(e) {
         // e.preventDefault();
       
         // 计算滚动的距离
-        var scrollDistance = e.originalEvent.deltaY*0.5;
+        var scrollDistance = e.originalEvent.deltaY * 0.5;
       
+        // 更新页面的位置
+        updatePagePosition(scrollDistance);
+    });
+
+    $(window).on('touchstart', function(e) {
+        touchStartY = e.originalEvent.touches[0].clientY;
+    });
+
+    $(window).on('touchend', function(e) {
+        var touchEndY = e.originalEvent.changedTouches[0].clientY;
+      
+        // 计算手指在屏幕上的滑动距离，注意我们需要将其乘以一个系数，使其与鼠标滚轮的滚动距离相当
+        var scrollDistance = (touchStartY - touchEndY) * 0.5;
+      
+        // 更新页面的位置
+        updatePagePosition(scrollDistance);
+    });
+
+    function updatePagePosition(scrollDistance) {
         // 计算总滚动距离
         totalScrollTop += scrollDistance;
       
@@ -31,8 +51,9 @@ $(document).ready(function() {
                 $(this).css('transform', 'none');
             }
         });
-    });
+    }
 });
+
 
 
 

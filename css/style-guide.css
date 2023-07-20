@@ -1,24 +1,26 @@
-/* .style-first{
+#style-first{
     width: 80%;
     height: 80%;
-    background-color: #CED2E7;
+    background-color: #f9cf93;
+    top: 10%;
+    left: 10%;
     z-index: 100;
 }
 
-.style-second{
+#style-second{
     width: 80%;
     height: 80%;
-    background-color: #E7D9E6;
-    right: 0;
-    bottom: 0;
+    background-color: #f9e4c8;
+    top: 8%;
+    left: 8%;
     z-index: 90;
 }
 
-.style-third{
+#style-third{
     width: 80%;
     height: 80%;
-    background-color: #D37548;
-    top: 0;
-    right: 0;
+    background-color: #dbd0c0;
+    top: 6%;
+    left: 6%;
     z-index: 80;
-} */
+}
