@@ -48,13 +48,25 @@ $(document).ready(function() {
         pagePilings.each(function(index) {
             if (index < currentIndex) {
                 $(this).css('transform', `translateY(-${vh}px)`);
+                $(this).find('.page-content').css('opacity', 1);
             } else if (index === currentIndex) {
                 var ratio = (totalScrollTop - vh * currentIndex) / vh;
                 $(this).css('transform', `translateY(-${ratio * vh}px)`);
+                // 当前页面滑动到一定比例后，下一个页面的内容开始逐渐显示
+                var threshold = 0.3;
+                if (index + 1 < pagePilings.length) {
+                    var nextOpacity = Math.max(0, (ratio - threshold) / (1 - threshold));
+                    $(pagePilings[index + 1]).find('.page-content').css('opacity', nextOpacity);
+                }
             } else {
                 $(this).css('transform', 'none');
+                // 如果不是下一个页面，内容保持透明
+                if (index !== currentIndex + 1) {
+                    $(this).find('.page-content').css('opacity', 0);
+                }
             }
         });
+
     }
 });
 

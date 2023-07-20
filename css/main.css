@@ -1,27 +1,60 @@
 * {
     box-sizing: border-box;
-    background-color: #f8eee3;
-    color: white;
     font-family: 'Montserrat';
 }
 
-h2{
-    background-color: transparent;
+body{
+    background-color: #ffffff;
 }
 
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+h1{
+    font-weight: 700;
+    font-size: 48pt;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 36pt;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 24pt;
+}
+
+h4{
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+p{
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+.lavender-blush{
+    color: #ffffff;
+    background-color: #feb1e3;
+}
+
+.light-cornflower-blue{
+    color: #ffffff;
+    background-color: #c7dfff;
+}
+
+.misty-rose{
+    color: #feb1e3;
+    background-color: #feeaf2;
+}
 
 /* -------------------------------------------- */
 
 .page-piling{
     position: absolute;
-    /* width: 80%;
-    height: 80%; */
-    /* background-color: blue; */
-    /* bottom: 0; */
-    transition: transform 0.5s ease-out; /* 添加这行 */
+    transition: transform 0.5s ease-out;
+}
+
+.page-content{
+    opacity: 0;
+    background-color: transparent;
 }
