@@ -1,8 +1,8 @@
 #cover{
     width: 80%;
     height: 80%;
-    top: 10%;
-    left: 10%;
+    top: 14%;
+    left: 12%;
     z-index: 100;
 
     display: flex;
@@ -14,27 +14,31 @@
 #fonts{
     width: 80%;
     height: 80%;
-    top: 8%;
-    left: 8%;
+    top: 12%;
+    left: 10%;
     z-index: 90;
 
-    padding-top: 3rem;
-    padding-left: 2rem;
+    padding: 3rem 2rem;
 }
 
 #palette{
     width: 80%;
     height: 80%;
-    top: 6%;
-    left: 6%;
+    top: 10%;
+    left: 8%;
     z-index: 80;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
 }
 
 #introduction{
     width: 80%;
     height: 80%;
-    top: 8%;
-    left: 8%;
+    top: 12%;
+    left: 10%;
     z-index: 70;
 
     padding: 0 2rem;
@@ -43,8 +47,8 @@
 #project-1-1{
     width: 80%;
     height: 80%;
-    top: 10%;
-    left: 10%;
+    top: 14%;
+    left: 12%;
     z-index: 60;
 
     padding: 0 2rem;
@@ -53,9 +57,39 @@
 #project-1-2{
     width: 80%;
     height: 80%;
-    top: 8%;
-    left: 8%;
+    top: 12%;
+    left: 10%;
     z-index: 50;
+
+    padding: 0 2rem;
+}
+
+#project-2-1{
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 8%;
+    z-index: 40;
+
+    padding: 0 2rem;
+}
+
+#project-2-2{
+    width: 80%;
+    height: 80%;
+    top: 12%;
+    left: 10%;
+    z-index: 30;
+
+    padding: 0 2rem;
+}
+
+#project-2-3{
+    width: 80%;
+    height: 80%;
+    top: 14%;
+    left: 12%;
+    z-index: 20;
 
     padding: 0 2rem;
 }

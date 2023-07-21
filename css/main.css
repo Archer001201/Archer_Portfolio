@@ -7,6 +7,11 @@ body{
     background-color: #ffffff;
 }
 
+header{
+    position: fixed;
+    z-index: 1000;
+}
+
 h1{
     font-weight: 700;
     font-size: 48pt;
@@ -18,8 +23,9 @@ h2{
 }
 
 h3{
-    font-weight: 700;
+    font-weight: 500;
     font-size: 24pt;
+    margin: 2rem 0 0 0;
 }
 
 h4{
@@ -28,6 +34,11 @@ h4{
 }
 
 p{
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+li{
     font-weight: 400;
     font-size: 16pt;
 }
@@ -47,11 +58,48 @@ p{
     background-color: #feeaf2;
 }
 
+.white{
+    color: #feb1e3;
+    background-color: #ffffff;
+}
+
+.cornflower-blue{
+    color: #ffffff;
+    background-color: #8b93d6;
+}
+
+.royal-blue{
+    color: #ffffff;
+    background-color: #3d4bba;
+}
+
+.nav-main{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    /* border: 1px solid red; */
+}
+
+.nav-button{
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: 500;
+    color: #8b93d6;
+    transition: all 0.3s ease-out;
+}
+
+.nav-button:hover,
+.nav-button:focus{
+    color: #3d4bba;
+}
+
 /* -------------------------------------------- */
 
 .page-piling{
     position: absolute;
     transition: transform 0.5s ease-out;
+    box-shadow: 0 3px 6px darkgray;
 }
 
 .page-content{

@@ -13,6 +13,15 @@
 </head>
 
 <body>
+    <header>
+        <nav class="nav-main">
+            <a class="nav-button" href="#cover">Home</a>
+            <a class="nav-button" href="#fonts">Style</a>
+            <a class="nav-button" href="#introduction">Introduction</a>
+            <a class="nav-button" href="#project-1-1">Project-1</a>
+            <a class="nav-button" href="#project-1-1">Project-2</a>
+        </nav>
+    </header>
     <section id="cover" class="page-piling misty-rose">
         <h1>Portfolio Style Guide</h1>
         <h4>Chuqiao Zhong</h4>
@@ -22,14 +31,25 @@
             <h2>Fonts</h2>
             <h1>h1: Montserrat bold 48pt</h1>
             <h2>h2: Montserrat bold 32pt</h2>
-            <h3>h3: Montserrat bold 24pt</h3>
-            <h4>h4: Montserrat regular 24pt</h4>
-            <p>p: Montserrat regular 12pt</p>
+            <h3>h3: Montserrat semi-bold 24pt</h3>
+            <h4>h4: Montserrat regular 20pt</h4>
+            <p>p: Montserrat regular 16pt</p>
         </div>
     </section>
     <section id="palette" class="page-piling lavender-blush">
         <div class="page-content">
             <h2>Color Palette</h2>
+            <h2>
+                <div class="palette">
+                    <div class="white">#FFFFFF</div>
+                    <div class="misty-rose">#FEEAF2</div>
+                    <div class="lavender-blush">#FEB1E3</div>
+                    <div class="light-cornflower-blue">#C7DFFF</div>
+                    <div class="cornflower-blue">#8B93D6</div>
+                    <div class="royal-blue">#3D4BBA</div>
+                    
+                </div>
+            </h2>
         </div>
     </section>
     <section id="introduction" class="page-piling misty-rose">
@@ -50,27 +70,30 @@
     </section>
     <section id="project-1-1" class="page-piling lavender-blush">
         <div class="page-content">
-            <h2>Project#1</h2>
-            <h3>Wizzarding Walls</h3>
-            <h4>Introduction:</h4>
+            <h2>Project#1 Wizzarding Walls</h2>
+            <h3>Introduction:</h3>
             <p>
                 Wizzarding Walls is a tower defense game developed using the Processing programming language. Players take on the role of commanders who must guide wizards to repel invaders and defend their home.    
             </p>
-            <h4>Mechanics Design:</h4>
+            <h3>Mechanics Design:</h3>
             <p>
                 Players need to consume energy to summon wizards and defeat the invading enemies along the way. When a certain number of invaders reach the gate, the home is lost. Players need to defeat all enemies before their home falls. Each defeated enemy will increase the player's energy, an important resource for summoning wizards.
+            </p>
+            <h3>Rewarding Design:</h3>
+            <p>
+                After passing each level, players unlock a new character as a reward. This new character can provide players with a new gaming experience and enrich the game's lineup and strategic depth.
             </p>
         </div>
     </section>
     <section id="project-1-2" class="page-piling light-cornflower-blue">
         <div class="page-content">
-            <h2>Project#1</h2>
+            <h2>Project#1 Wizzarding Walls</h2>
 
-            <h4>Character Design:</h4>
+            <h3>Character Design:</h3>
             <p>
                 Wizards have attributes such as health points, summoning energy, attack power, attack range, attack speed, and skills. A mathematical formula is used to balance the abilities and summoning energy of the characters, enhancing the balance and diversity of the game.
             </p>
-            <h4>Level Design:</h4>
+            <h3>Level Design:</h3>
             <ul>
                 <li>
                     In the first level, the type of enemy is singular, and there's only one attack route, allowing players to experience and explore game mechanics and gameplay at a basic difficulty.
@@ -82,12 +105,49 @@
                     In the third level, enemies attack from two initial points, dividing their forces. The player must also protect two gates. After all regular enemies are defeated, a powerful Boss appears, requiring a good understanding of the game for the player to clear the level successfully.
                 </li>
             </ul>
-            <h4>Rewarding Design:</h4>
+        </div>
+    </section>
+    <section id="project-2-1" class="page-piling misty-rose">
+        <div class="page-content">
+            <h2>Project#2 Warrior's Tale</h2>
+            <h3>Introduction:</h3>
             <p>
-                After passing each level, players unlock a new character as a reward. This new character can provide players with a new gaming experience and enrich the game's lineup and strategic depth.
+                Warrior's Tale is an innovative 2D side-scrolling action game developed utilizing the Unity engine.     
+            </p>
+            <h3>Input System:</h3>
+            <p>
+                This game integrates Unity's latest Input System. This system allows for real-time swapping between operation modes on various devices and controllers. Players can smoothly transition from using a mouse-and-keyboard setup to an Xbox gamepad, thereby elevating the gameplay experience and catering to individual preferences in terms of controls.
+            </p>
+
+        </div>
+    </section>
+    <section id="project-2-2" class="page-piling light-cornflower-blue">
+        <div class="page-content">
+            <h2>Project#2 Warrior's Tale</h2>
+            <h3>Animator:</h3>
+            <p>
+                Warrior's Tale uses animation technologies, including Blend Trees and State Machines. These technologies help render a rich array of animations and facilitate dynamic transitions between different animations. These mechanisms offer players a visually compelling experience, with characters that move naturally and respond immediately to player input.
+            </p>
+            <h3>Rule Tile & Animated Tile:</h3>
+            <p>
+                The integration of Rule Tiles and Animated Tiles has revolutionized the way we design game levels. These tools allow developers to create and customize tile templates, significantly simplifying the map-creation process. Moreover, Animated Tiles provide the maps with a degree of dynamism, adding life to the environment and enhancing the immersive qualities of the game world.
             </p>
         </div>
     </section>
+    <section id="project-2-3" class="page-piling lavender-blush">
+        <div class="page-content">
+            <h2>Project#2 Warrior's Tale</h2>
+            <h3>Scriptable Object:</h3>
+            <p>
+                The use of Scriptable Objects has been integral to the game's development. These objects serve to store critical game data and manage game events through broadcasting and listening systems. By utilizing Scriptable Objects, we have effectively reduced the coupling between different segments of our code. This results in a more independent, modular collaboration between game scripts, contributing to a well-structured and maintainable codebase.   
+            </p>
+            <h3>Universal Rendering Pipeline:</h3>
+            <p>
+                This project employs the Universal Render Pipeline (URP), a new type of rendering pipeline introduced by Unity. URP provides developers with ease of use and flexibility. It is specifically optimized for cross-platform development, delivering superior performance and graphical quality.
+            </p>
+        </div>
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/page_piling.js"></script>
 </body>

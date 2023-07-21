@@ -32,6 +32,27 @@ $(document).ready(function() {
         touchStartY = touchEndY;  // 将当前的坐标设置为下一次滑动的开始坐标
     });
 
+    $('nav a').on('click', function(e) {
+        // e.preventDefault();  // 阻止浏览器的默认点击行为
+    
+        // 获取要跳转的section的id
+        var targetId = $(this).attr('href').slice(1);
+      
+        // 找到对应的section
+        var targetSection = $(`.page-piling#${targetId}`);
+      
+        // 计算其在所有section中的索引
+        var targetIndex = $('.page-piling').index(targetSection);
+      
+        // 计算对应的滚动距离
+        var targetScrollTop = targetIndex * vh;
+      
+        // 更新页面的位置
+        updatePagePosition(targetScrollTop - totalScrollTop);
+
+        targetSection.find('.page-content').css('opacity', 1);
+    });
+
     function updatePagePosition(scrollDistance) {
         // 计算总滚动距离
         totalScrollTop += scrollDistance;
@@ -54,8 +75,14 @@ $(document).ready(function() {
                 $(this).css('transform', `translateY(-${ratio * vh}px)`);
                 // 当前页面滑动到一定比例后，下一个页面的内容开始逐渐显示
                 var threshold = 0.3;
+                var fullOpacityThreshold = 0.6;
                 if (index + 1 < pagePilings.length) {
-                    var nextOpacity = Math.max(0, (ratio - threshold) / (1 - threshold));
+                    var nextOpacity;
+                    if (ratio >= fullOpacityThreshold) {
+                        nextOpacity = 1;
+                    } else {
+                        nextOpacity = Math.max(0, (ratio - threshold) / (fullOpacityThreshold - threshold));
+                    }
                     $(pagePilings[index + 1]).find('.page-content').css('opacity', nextOpacity);
                 }
             } else {
@@ -69,6 +96,9 @@ $(document).ready(function() {
 
     }
 });
+
+
+
 
 
 // $(document).ready(function() {

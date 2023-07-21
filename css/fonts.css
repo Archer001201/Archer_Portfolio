@@ -25,3 +25,10 @@
     font-style: normal;
     src: url("../fonts/Montserrat-Light.ttf") format('truetype');
 }
+
+@font-face{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/Montserrat-SemiBold.ttf") format('truetype');
+}
