@@ -57,7 +57,7 @@ $(document).ready(function() {
         totalScrollTop += scrollDistance;
       
         // 限制总滚动距离在 0 到 page-pilings 的高度之间
-        totalScrollTop = Math.max(0, Math.min(totalScrollTop, pagePilings.length * vh-100));
+        totalScrollTop = Math.max(0, Math.min(totalScrollTop, (pagePilings.length-1) * vh));
       
         // 计算当前应该显示的 page-piling 索引
         var currentIndex = Math.floor(totalScrollTop / vh);
