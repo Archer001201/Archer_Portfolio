@@ -5,16 +5,25 @@
 
 body{
     background-color: #ffffff;
+    display: flex;
 }
 
-header{
+header {
     position: fixed;
+    top: 100%;
+    width: 100vh;
     z-index: 1000;
 }
 
+
 h1{
     font-weight: 700;
-    font-size: 48pt;
+    font-size: 64px;
+}
+
+h1 strong{
+    font-weight: 700;
+    font-size: 96px;
 }
 
 h2{
@@ -41,6 +50,18 @@ p{
 li{
     font-weight: 400;
     font-size: 16pt;
+}
+
+.left-header{
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+}
+
+.right-header{
+    right: 0;
+    transform: rotate(90deg);
+    transform-origin: top right;
 }
 
 .lavender-blush{
@@ -74,16 +95,16 @@ li{
 }
 
 .nav-main{
-    width: 100vw;
     display: flex;
     justify-content: space-around;
     padding-top: 2rem;
+    margin: auto;
     /* border: 1px solid red; */
 }
 
 .nav-button{
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 24px;
     font-weight: 500;
     color: #8b93d6;
     transition: all 0.3s ease-out;
