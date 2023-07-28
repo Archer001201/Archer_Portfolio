@@ -12,6 +12,7 @@ http://flickity.metafizzy.co
     overflow: hidden;
     position: relative;
     height: 100%;
+    border: 1px solid black;
   }
   
   .flickity-slider {
@@ -43,7 +44,7 @@ http://flickity.metafizzy.co
   /* ---- previous/next buttons ---- */
   
   .flickity-prev-next-button {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
     top: 50%;
     width: 44px;
@@ -90,7 +91,7 @@ http://flickity.metafizzy.co
   }
   
   .flickity-prev-next-button svg {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
     left: 20%;
     top: 20%;
@@ -114,7 +115,7 @@ http://flickity.metafizzy.co
   .flickity-page-dots {
     position: absolute;
     width: 100%;
-    bottom: -25px;
+    top: -25px;
     padding: 0;
     margin: 0;
     list-style: none;
