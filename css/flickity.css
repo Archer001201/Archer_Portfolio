@@ -75,7 +75,6 @@ http://flickity.metafizzy.co
   .flickity-prev-next-button.next { right: 10px; }
   /* right to left */
   .flickity-rtl .flickity-prev-next-button.previous {
-    border: 1px solid red;
     left: auto;
     right: 10px;
   }
@@ -91,7 +90,7 @@ http://flickity.metafizzy.co
   }
   
   .flickity-prev-next-button svg {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     position: absolute;
     left: 20%;
     top: 20%;
@@ -105,7 +104,7 @@ http://flickity.metafizzy.co
   
   /* color & size if no SVG - IE8 and Android 2.3 */
   .flickity-prev-next-button.no-svg {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: #333;
     font-size: 26px;
   }
