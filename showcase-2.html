@@ -8,30 +8,143 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/showcase.css">
 
 </head>
 
 <body>
-    <header class="left-header">
-        <nav class="nav-main">
-            <a class="nav-button" href="index.html#projects">Projects</a>
-            <a class="nav-button" href="index.html#about-me">About me</a>
-            <a class="nav-button" href="index.html#hero">Home</a>
-        </nav>
+    <header class="hamburger">
+        <div class="hamburger-button">
+            <div class="button-line"></div>
+            <div class="button-line"></div>
+        </div>
+        <div class="toggle-container">
+            <a class="nav-button" href="#hero">Home</a>
+            <a class="nav-button" href="#about-me">About me</a>
+            <a class="nav-button" href="#projects">Projects</a>
+            <a class="nav-button" href="showcase-1.html">Showcase#1</a>
+            <a class="nav-button" href="showcase-2.html">Showcase#2</a>
+        </div>
     </header>
+    <div class="after-hamburger"></div>
 
-    <div class="main-container">
-        
+    <div class="horizontal-layout">
+        <header class="left-header">
+            <nav class="nav-main">
+                <a class="nav-button" href="index.html#projects">Projects</a>
+                <a class="nav-button" href="index.html#about-me">About me</a>
+                <a class="nav-button" href="index.html#hero">Home</a>
+            </nav>
+        </header>
+
+        <div class="main-container">
+            <section id="project-1" class="page-piling misty-rose">
+                <div>
+                    <h2>Project#2 Warrior's Tale</h2>
+                    <h3>Introduction:</h3>
+                    <p>
+                        Warrior's Tale is an innovative 2D side-scrolling action game developed utilizing the Unity
+                        engine.
+                    </p>
+                    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imgs/WizardingWalls-hero.png" alt="Los Angeles" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imgs/ww4.png" alt="Chicago" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imgs/ww3.png" alt="New York" class="d-block w-100">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="project-2" class="page-piling light-cornflower-blue">
+                <div class="page-content">
+                    <h2>Project#2 Warrior's Tale</h2>
+
+                    <h3>Input System:</h3>
+                    <p>
+                        This game integrates Unity's latest Input System. This system allows for real-time swapping
+                        between operation modes on various devices and controllers. Players can smoothly transition from
+                        using a mouse-and-keyboard setup to an Xbox gamepad, thereby elevating the gameplay experience
+                        and catering to individual preferences in terms of controls.
+                    </p>
+
+                    <h3>Animator:</h3>
+                    <p>
+                        Warrior's Tale uses animation technologies, including Blend Trees and State Machines. These
+                        technologies help render a rich array of animations and facilitate dynamic transitions between
+                        different animations. These mechanisms offer players a visually compelling experience, with
+                        characters that move naturally and respond immediately to player input.
+                    </p>
+                </div>
+                <div class="page-content">
+                    <div class="image-flex">
+                        <img src="imgs/Wizard_Idle_0.png" alt="" width="250" height="250">
+                        <img src="imgs/ww1.png" alt="" width="250" height="200">
+                    </div>
+                </div>
+            </section>
+            <section id="project-3" class="page-piling lavender-blush">
+                <div class="page-content">
+                    <h2>Project#2 Warrior's Tale</h2>
+
+                    <h3>Rule Tile & Animated Tile:</h3>
+                    <p>
+                        The integration of Rule Tiles and Animated Tiles has revolutionized the way we design game
+                        levels. These tools allow developers to create and customize tile templates, significantly
+                        simplifying the map-creation process. Moreover, Animated Tiles provide the maps with a degree of
+                        dynamism, adding life to the environment and enhancing the immersive qualities of the game
+                        world.
+                    </p>
+
+                    <h3>Scriptable Object:</h3>
+                    <p>
+                        The use of Scriptable Objects has been integral to the game's development. These objects serve
+                        to store critical game data and manage game events through broadcasting and listening systems.
+                        By utilizing Scriptable Objects, we have effectively reduced the coupling between different
+                        segments of our code. This results in a more independent, modular collaboration between game
+                        scripts, contributing to a well-structured and maintainable codebase.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <header class="right-header">
+            <nav class="nav-main">
+                <a class="nav-button" href="#">Showcase#1</a>
+                <a class="nav-button" href="showcase-2.html">Showcase#2</a>
+            </nav>
+        </header>
     </div>
 
-    <header class="right-header">
-        <nav class="nav-main">
-            <a class="nav-button" href="showcase-1.html">Showcase#1</a>
-            <a class="nav-button" href="#">Showcase#2</a>
-        </nav>
-    </header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="js/page_piling.js"></script>
+    <script src="js/header.js"></script>
 </body>
 
 </html>

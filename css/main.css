@@ -194,7 +194,14 @@ li{
     opacity: 0;
     background-color: transparent;
     width: 100%;
-    height: 100%;
+    height: fit-content;
+    /* border: 1px solid red; */
+}
+
+#hero-carousel{
+    /* border: 1px solid red; */
+    width: 75%;
+    margin: auto;
 }
 
 
