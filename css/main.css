@@ -5,6 +5,9 @@
 
 body{
     background-color: #ffffff;
+}
+
+.horizontal-layout{
     display: flex;
 }
 
@@ -125,13 +128,14 @@ li{
 
 .hamburger{
     /* border: 10px solid red; */
+    background-color: #ffffff;
     display: none;
     top: 0;
     width: 100vw;
     height: fit-content;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    /* padding-top: 2rem; */
 }
 
 .button-line{
@@ -159,7 +163,7 @@ li{
     top: 100%;
     left: 0;
     z-index: -1;
-    transform: translateY(-100%);
+    transform: translateY(-120%);
     transition: all 0.8s ease-out;
     display: flex;
     flex-direction: column;
@@ -169,6 +173,13 @@ li{
 
 .toggle-container .nav-button{
     font-size: 20px;
+}
+
+.after-hamburger{
+    width: 100%;
+    height: 35px;
+    /* padding: 10rem; */
+    /* border: 1px solid red; */
 }
 
 /* -------------------------------------------- */
@@ -194,6 +205,8 @@ li{
 
     .page-piling{
         position: static;
+        /* width: 100vw;
+        height: 100vh; */
     }
 
     h1{

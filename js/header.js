@@ -11,6 +11,6 @@ hamburgerButton.addEventListener('click', function (event) {
         toggleContainer.style.transform = 'translateY(0)';
     } else {
         hamburgerButton.classList.remove('clicked');
-        toggleContainer.style.transform = 'translateY(-100%)';
+        toggleContainer.style.transform = 'translateY(-120%)';
     }
 })
