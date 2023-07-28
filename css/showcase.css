@@ -1,0 +1,14 @@
+#project-1-1{
+    width: 80%;
+    height: 80%;
+    top: 14%;
+    left: 12%;
+    z-index: 60;
+
+    padding: 0 2rem;
+}
+
+img{
+    width: 75%;
+    height: auto;
+}

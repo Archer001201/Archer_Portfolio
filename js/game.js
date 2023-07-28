@@ -30,7 +30,7 @@ var player = document.getElementById('player');
 player.style.animation = 'player-running 1s steps(6) infinite';
 
 // 监听点击事件
-window.addEventListener('click', function() {
+gameContainer.addEventListener('click', function() {
     // 如果已经在跳跃（即动画为jumping），就不做任何事
     if (player.style.animationName === 'player-jumping') return;
 
