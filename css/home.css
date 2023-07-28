@@ -117,6 +117,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
 }
 
 .carousel {
@@ -136,16 +139,17 @@
 
 .carousel-image {
     flex-shrink: 0;
-    width: 250px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     margin: 0 25px;
     /* border: 1px solid yellow; */
 }
 
 .carousel-image img {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     object-fit: cover;
+    border: 1px solid red;
 }
 
 .carousel-image img {
@@ -204,6 +208,7 @@
 }
 
 .game-card-overlay {
+    border: 1px solid red;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -220,6 +225,29 @@
     right: 0;
     transform: rotate(180deg);
 }
+
+.gallery{
+    width: 60%;
+    position: relative;
+    border: 1px solid red;
+}
+
+.gallery-cell {
+    width: 25%;
+    height: 200px;
+    margin-right: 10px;
+    /* counter-increment: gallery-cell; */
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: "";
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
 
 /* ----------------------------------------- */
 /* nintendo switch */
