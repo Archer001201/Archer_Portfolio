@@ -139,7 +139,7 @@
 
 .carousel-image {
     display: flex;
-    width: 100%;
+    width: fit-content;
     height: 80%;
     margin: auto;
     justify-content: center;
