@@ -235,11 +235,11 @@
     width: 60%;
     height: 200px;
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .gallery-cell {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 40%;
     height: 200px;
     margin-right: 50px;

@@ -12,7 +12,7 @@ http://flickity.metafizzy.co
     overflow: hidden;
     position: relative;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
   
   .flickity-slider {
