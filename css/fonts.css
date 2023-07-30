@@ -32,3 +32,10 @@
     font-style: normal;
     src: url("../fonts/Montserrat-SemiBold.ttf") format('truetype');
 }
+
+@font-face{
+    font-family: 'TomorrowNight';
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Tomorrow-Night.ttf") format('truetype');
+}

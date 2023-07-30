@@ -36,6 +36,26 @@ p{
     padding: 2rem;
 }
 
+/* #hero-carousel{
+    height: 30%;
+    border: 1px solid red;
+} */
+
+.carousel-inner{
+    max-height: 450px;
+    /* border: 1px solid red; */
+}
+
+.carousel-item img{
+    margin: auto;
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: #8b93d6;
+    border-radius: 50%;
+} */
+
 .image-flex{
     width: 100%;
     display: flex;
