@@ -19,24 +19,41 @@
 /* --------------------------------- */
 
 #about-me {
-    width: 60%;
+    width: 72%;
     height: 60%;
     min-height: fit-content;
     z-index: 90;
     top: 8%;
-    left: 14%;
+    left: 10%;
 }
 
 #about-me .page-content {
     display: flex;
+    /* justify-content: space-around; */
+    /* border: 1px solid red; */
+    height: 100%;
 }
 
 #about-me .body-text {
-    width: 45%;
+    width: fit-content;
+    min-width: 45%;
     height: 90%;
+    /* height: 800px; */
     padding: 1rem;
     margin: auto;
     /* border: 1px solid red; */
+    text-align: center;
+}
+
+#about-me li {
+    /* border: 1px solid red; */
+    width: fit-content;
+}
+
+#about-me ul {
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin: auto;
 }
 
 #about-me .dividing-line-vertical {
