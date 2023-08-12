@@ -1,6 +1,7 @@
 #hero {
     width: 70%;
     height: 80%;
+    min-height: fit-content;
     z-index: 100;
     top: 10%;
     left: 15%;
@@ -20,6 +21,7 @@
 #about-me {
     width: 60%;
     height: 60%;
+    min-height: fit-content;
     z-index: 90;
     top: 8%;
     left: 14%;
@@ -54,11 +56,12 @@
 /* ------------------------------------ */
 
 #developing-skills {
-    width: 40%;
+    width: 60%;
     height: 80%;
+    min-height: fit-content;
     z-index: 80;
     top: 12%;
-    left: 46%;
+    left: 30%;
 
     display: flex;
     flex-direction: column;
@@ -122,6 +125,10 @@
     height: 100%;
 }
 
+/* #projects .page-content{
+    border: 1px solid red;
+} */
+
 .carousel-image {
     display: flex;
     width: fit-content;
@@ -143,6 +150,7 @@
 .gallery{
     width: 60%;
     height: 200px;
+    margin: auto;
     position: relative;
     /* border: 1px solid red; */
 }
