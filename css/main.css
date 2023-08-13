@@ -218,9 +218,18 @@ li a{
 }
 
 #reflection{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: fit-content;
+}
+
+#reflection .page-content{
+    width: 80%;
+    margin: auto;
+}
+
+.text-colored{
+    color: #feb1e3;
 }
 
 
