@@ -70,7 +70,7 @@ p{
     #project-2,
     #project-3 {
         width: 100vw;
-        height: 90vh;
+        height: fit-content;
 
         display: flex;
         flex-direction: column;

@@ -272,11 +272,15 @@
 }
 
 @media only screen and (max-width: 800px) {
-    #hero,
+    #hero{
+        width: 100vw;
+        height: 90vh;
+    }
     #about-me,
     #developing-skills {
         width: 100vw;
-        height: 90vh;
+        height: fit-content;
+        padding: 5rem 0;
     }
 
     #about-me .page-content {
