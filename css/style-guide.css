@@ -93,3 +93,27 @@
 
     padding: 0 2rem;
 }
+
+h1,h2,h3,h4,h5,p{
+    margin: 1rem 0;
+}
+
+@media only screen and (max-width: 800px) {
+    #cover{
+        width: 100vw;
+        height: 90vh;
+    }
+    #fonts,
+    #palette,
+    #introduction,
+    #introduction,
+    #project-1-1, 
+    #project-1-2, 
+    #project-2-1, 
+    #project-2-2, 
+    #project-2-3{
+        width: 100vw;
+        height: fit-content;
+        padding: 5rem 2rem;
+    }
+}

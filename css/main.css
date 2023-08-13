@@ -260,6 +260,26 @@ li a{
     justify-content: center;
 }
 
+.citation{
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+    transform: translateY(50%);
+}
+
+.citation h2{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.citation a{
+    display: block;
+    margin: 2rem 0;
+    word-wrap: break-word;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
 
 @media only screen and (max-width: 800px) {
     .nav-main{

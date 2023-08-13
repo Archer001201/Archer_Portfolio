@@ -29,6 +29,13 @@
     /* border: 1px solid red; */
 }
 
+#game-container p{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    /* border: 1px solid red; */
+}
+
 /* @keyframes player-running {
     0% { background-image: url("../imgs/webgame/player/run/player-run-1.png"); }
     20% { background-image: url("../imgs/webgame/player/run/player-run-2.png"); }
