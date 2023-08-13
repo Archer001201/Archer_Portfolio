@@ -1,41 +1,41 @@
-@font-face{
-    font-family: 'Montserrat';
+@font-face {
+    font-family: "Montserrat";
     font-weight: 400;
     font-style: normal;
-    src: url("../fonts/Montserrat-Regular.ttf") format('truetype');
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
-@font-face{
-    font-family: 'Montserrat';
+@font-face {
+    font-family: "Montserrat";
     font-weight: 700;
     font-style: normal;
-    src: url("../fonts/Montserrat-Bold.ttf") format('truetype');
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
-@font-face{
-    font-family: 'Montserrat';
+@font-face {
+    font-family: "Montserrat";
     font-weight: 900;
     font-style: normal;
-    src: url("../fonts/Montserrat-Black.ttf") format('truetype');
+    src: url("../fonts/Montserrat-Black.ttf") format("truetype");
 }
 
-@font-face{
-    font-family: 'Montserrat';
+@font-face {
+    font-family: "Montserrat";
     font-weight: 300;
     font-style: normal;
-    src: url("../fonts/Montserrat-Light.ttf") format('truetype');
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
 }
 
-@font-face{
-    font-family: 'Montserrat';
+@font-face {
+    font-family: "Montserrat";
     font-weight: 500;
     font-style: normal;
-    src: url("../fonts/Montserrat-SemiBold.ttf") format('truetype');
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
 }
 
-@font-face{
-    font-family: 'TomorrowNight';
+@font-face {
+    font-family: "TomorrowNight";
     font-weight: 400;
     font-style: normal;
-    src: url("../fonts/Tomorrow-Night.ttf") format('truetype');
+    src: url("../fonts/Tomorrow-Night.ttf") format("truetype");
 }

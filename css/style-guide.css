@@ -1,4 +1,4 @@
-#cover{
+#cover {
     width: 80%;
     height: 80%;
     top: 14%;
@@ -11,7 +11,7 @@
     align-items: center;
 }
 
-#fonts{
+#fonts {
     width: 80%;
     height: 80%;
     top: 12%;
@@ -21,7 +21,7 @@
     padding: 3rem 2rem;
 }
 
-#palette{
+#palette {
     width: 80%;
     height: 80%;
     top: 10%;
@@ -34,7 +34,7 @@
     padding: 0 2rem;
 }
 
-#introduction{
+#introduction {
     width: 80%;
     height: 80%;
     top: 12%;
@@ -44,7 +44,7 @@
     padding: 0 2rem;
 }
 
-#project-1-1{
+#project-1-1 {
     width: 80%;
     height: 80%;
     top: 14%;
@@ -54,7 +54,7 @@
     padding: 0 2rem;
 }
 
-#project-1-2{
+#project-1-2 {
     width: 80%;
     height: 80%;
     top: 12%;
@@ -64,7 +64,7 @@
     padding: 0 2rem;
 }
 
-#project-2-1{
+#project-2-1 {
     width: 80%;
     height: 80%;
     top: 10%;
@@ -74,7 +74,7 @@
     padding: 0 2rem;
 }
 
-#project-2-2{
+#project-2-2 {
     width: 80%;
     height: 80%;
     top: 12%;
@@ -84,7 +84,7 @@
     padding: 0 2rem;
 }
 
-#project-2-3{
+#project-2-3 {
     width: 80%;
     height: 80%;
     top: 14%;
@@ -94,12 +94,21 @@
     padding: 0 2rem;
 }
 
-h1,h2,h3,h4,h5,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
     margin: 1rem 0;
 }
 
+.palette h2 {
+    margin: 0;
+}
+
 @media only screen and (max-width: 800px) {
-    #cover{
+    #cover {
         width: 100vw;
         height: 90vh;
     }
@@ -107,11 +116,11 @@ h1,h2,h3,h4,h5,p{
     #palette,
     #introduction,
     #introduction,
-    #project-1-1, 
-    #project-1-2, 
-    #project-2-1, 
-    #project-2-2, 
-    #project-2-3{
+    #project-1-1,
+    #project-1-2,
+    #project-2-1,
+    #project-2-2,
+    #project-2-3 {
         width: 100vw;
         height: fit-content;
         padding: 5rem 2rem;

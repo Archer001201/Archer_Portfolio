@@ -11,7 +11,7 @@
     bottom: 0;
     width: 60px;
     height: 30px;
-    background-image: url('../imgs/webgame/platform-long.png');
+    background-image: url("../imgs/webgame/platform-long.png");
     background-size: contain;
     background-repeat: no-repeat;
     /* border: 1px solid red; */
@@ -29,7 +29,7 @@
     /* border: 1px solid red; */
 }
 
-#game-container p{
+#game-container p {
     position: absolute;
     bottom: 0;
     right: 5%;
@@ -46,31 +46,53 @@
 } */
 
 @keyframes player-running {
-    0% { background-image: url("../imgs/webgame/player/run/player-run-1.png"); animation-timing-function: ease-in-out;}
-    20% { background-image: url("../imgs/webgame/player/run/player-run-2.png"); animation-timing-function: ease-in-out;}
-    40% { background-image: url("../imgs/webgame/player/run/player-run-3.png"); animation-timing-function: ease-in-out;}
-    60% { background-image: url("../imgs/webgame/player/run/player-run-4.png"); animation-timing-function: ease-in-out;}
-    80% { background-image: url("../imgs/webgame/player/run/player-run-5.png"); animation-timing-function: ease-in-out;}
-    100% { background-image: url("../imgs/webgame/player/run/player-run-6.png"); animation-timing-function: ease-in-out;}
+    0% {
+        background-image: url("../imgs/webgame/player/run/player-run-1.png");
+        animation-timing-function: ease-in-out;
+    }
+    20% {
+        background-image: url("../imgs/webgame/player/run/player-run-2.png");
+        animation-timing-function: ease-in-out;
+    }
+    40% {
+        background-image: url("../imgs/webgame/player/run/player-run-3.png");
+        animation-timing-function: ease-in-out;
+    }
+    60% {
+        background-image: url("../imgs/webgame/player/run/player-run-4.png");
+        animation-timing-function: ease-in-out;
+    }
+    80% {
+        background-image: url("../imgs/webgame/player/run/player-run-5.png");
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        background-image: url("../imgs/webgame/player/run/player-run-6.png");
+        animation-timing-function: ease-in-out;
+    }
 }
 
 @keyframes player-jumping {
-    0%, 30% {
+    0%,
+    30% {
         background-image: url("../imgs/webgame/player/jump/player-jump-1.png");
         transform: translateY(-50px);
-        animation-timing-function: ease-in-out; 
+        animation-timing-function: ease-in-out;
     }
-    31%, 50% {
+    31%,
+    50% {
         background-image: url("../imgs/webgame/player/jump/player-jump-1.png");
         transform: translateY(-75px);
-        animation-timing-function: linear; 
+        animation-timing-function: linear;
     }
-    51%, 70% {
+    51%,
+    70% {
         background-image: url("../imgs/webgame/player/jump/player-jump-2.png");
         transform: translateY(-50px);
         animation-timing-function: linear;
     }
-    71%, 100% {
+    71%,
+    100% {
         background-image: url("../imgs/webgame/player/jump/player-jump-2.png");
         transform: translateY(0);
         animation-timing-function: ease-in-out;
@@ -79,11 +101,11 @@
 
 .cherry {
     position: absolute;
-    top: 25%; 
+    top: 25%;
     right: 0;
     width: 30px;
     height: 30px;
-    background-image: url('../imgs/webgame/cherry/cherry-1.png');
+    background-image: url("../imgs/webgame/cherry/cherry-1.png");
     background-size: contain;
     animation: moveCherry 5s linear;
 }
@@ -96,8 +118,3 @@
         right: 100%;
     }
 }
-
-
-
-
-
