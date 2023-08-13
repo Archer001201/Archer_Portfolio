@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    // if($(window).width() < 700) {
+    //     return;
+    // }
+
     var pagePilings = $('.page-piling');
     var totalScrollTop = 0; 
     var vh = $(window).height() * 1.25; 

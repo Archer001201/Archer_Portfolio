@@ -1,5 +1,6 @@
 // var platforms = document.getElementsByClassName('platform');
 var gameContainer = document.getElementById('game-container');
+var clickableArea = document.getElementById('hero');
 var speed = 2;  
 
 // for (var i = 0; i < platforms.length; i++) {
@@ -26,7 +27,7 @@ var player = document.getElementById('player');
 
 player.style.animation = 'player-running 1s steps(6) infinite';
 
-gameContainer.addEventListener('click', function() {
+clickableArea.addEventListener('click', function() {
     if (player.style.animationName === 'player-jumping') return;
 
     player.style.animation = 'player-jumping 1s steps(4) forwards';

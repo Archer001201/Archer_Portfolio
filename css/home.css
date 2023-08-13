@@ -191,6 +191,15 @@
 
 /* ----------------------------------------- */
 /* nintendo switch */
+#projects .page-content{
+    width: 100%;
+}
+
+#projects{
+    width: 100%;
+    height: 100vh;
+}
+
 .nintendo-switch-container {
     position: relative;
 }
